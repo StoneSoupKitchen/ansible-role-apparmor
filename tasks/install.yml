@@ -1,0 +1,21 @@
+# Install the apparmor package.
+---
+- name: Define apparmor_package
+  set_fact:
+    apparmor_package: "{{ __apparmor_package }}"
+  when: apparmor_package is not defined
+
+- name: Define apparmor_utils_package
+  set_fact:
+    apparmor_utils_package: "{{ __apparmor_utils_package }}"
+  when: apparmor_utils_package is not defined
+
+- name: Install apparmor
+  apt:
+    name: "{{ apparmor_package }}"
+    state: "{{ apparmor_package_state }}"
+
+- name: Install apparmor-utils
+  apt:
+    name: "{{ apparmor_utils_package }}"
+    state: "{{ apparmor_utils_package_state }}"

@@ -1,0 +1,3 @@
+---
+__apparmor_package: "apparmor"
+__apparmor_utils_package: "apparmor-utils"

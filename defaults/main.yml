@@ -1,0 +1,6 @@
+---
+# State of the apparmor package. Use `present` to make sure the package is
+# installed, or use `latest` to make sure the package is always at the latest
+# version.
+apparmor_package_state: present
+apparmor_utils_package_state: present
