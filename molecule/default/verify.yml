@@ -1,0 +1,12 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Collect host package information
+    package_facts:
+      manager: "auto"
+
+  - name: Package "apparmor" should be installed
+    assert:
+      that: '"apparmor" in ansible_facts.packages'
