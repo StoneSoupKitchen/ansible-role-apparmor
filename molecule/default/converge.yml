@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  
+  pre_tasks:
+    - name: "Sync package repositories"
+      apt:
+        update_cache: true
+
+  roles:
+    - stonesoupkitchen.apparmor
