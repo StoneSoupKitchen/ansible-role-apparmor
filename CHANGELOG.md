@@ -1,7 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [0.1.1] - 2022-03-01
+## [0.1.2] - 2022-04-29
+
+### Miscellaneous Tasks
+
+- Bump ansible-core from 2.11.9 to 2.11.10 (#9) (465085f)
+- Bump ansible-core from 2.11.10 to 2.11.11 (#10) (c2b482b)
+
+## [0.1.1] - 2022-03-02
 
 ### Miscellaneous Tasks
 
